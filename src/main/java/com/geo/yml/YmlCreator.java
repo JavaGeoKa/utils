@@ -1,6 +1,7 @@
 package com.geo.yml;
 
 import com.geo.yml.model.*;
+import com.thoughtworks.xstream.XStream;
 import lombok.Builder;
 import org.springframework.beans.factory.annotation.Value;
 
@@ -47,6 +48,11 @@ public class YmlCreator {
                 .build();
 
         System.out.println(shop);
+        XStream xstream = new XStream();
+        String xml = xstream.toXML(shop);
+        System.out.println(xml);
+
+
 
 
 
