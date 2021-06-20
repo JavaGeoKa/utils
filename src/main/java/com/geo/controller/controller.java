@@ -3,6 +3,7 @@ package com.geo.controller;
 
 
 import com.geo.dto.RequestDto;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,7 +29,8 @@ public class controller {
         System.out.println(requestDto.getData());
         System.out.println(request.getRemoteAddr());
         System.out.println(request.getLocalPort());
-        return ResponseEntity.ok("ok");
+//        return ResponseEntity.ok("ok");
+        return new ResponseEntity(requestDto, HttpStatus.OK);
     }
 
 
