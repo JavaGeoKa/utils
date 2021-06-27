@@ -21,7 +21,7 @@ import java.util.Arrays;
 public class ProxyRequestJob {
 
     @Autowired
-    ProxyService proxyService;
+    ProxyService proxyService;     //get proxy from provider
 
     static ObjectMapper mapper = new ObjectMapper();
 
