@@ -104,7 +104,11 @@
 			<version>0.4.35</version>
 		</dependency>
 
-
+		<dependency>
+			<groupId>com.google.crypto.tink</groupId>
+			<artifactId>tink</artifactId>
+			<version>1.6.0</version>
+		</dependency>
 
 		<dependency>
 			<groupId>com.thoughtworks.xstream</groupId>
